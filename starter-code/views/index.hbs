@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title> {{title}} </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Lab financial data graphing</h1>
 
-<head>
-  <title> Lab Financial Data Graphing </title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
+    From: <input type="date" id="from">
+    To: <input type="date" id="to">
+    Currency: <select id="currency">
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+    </select>
 
-<body>
-  <h1> Lab Financial Data Graphing </h1>
+    <canvas id="myChart" width="400" height="400"></canvas>
 
-  <canvas id="myChart" width="400" height="400"></canvas>
-
-    <!-- This script id defining a variable "Chart"??? -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-  <!-- This script id defining a variable "axios" -->
+  </body>
+    <!-- This script id defining a variable "Chart" -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <!-- This script id defining a variable "axios" -->  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
-
-</body>
-
 </html>
